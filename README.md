@@ -22,7 +22,35 @@ VITE-APP-TITLE = XXXX
 const title = import.meta.env.VITE-APP-TITLE
 ```
 
-5.注意 `vite.config.ts` 内不再能获取 `env` 的配置信息。关于vite.config的配置信息通过 script指令 传入, 如: --mode developent/production --host --port
+5.注意 `vite.config.ts` 内不能直接 访问`env` 的配置信息， 需要使用 vite 提供的 `loadEnv`
+```bash
+import type { UserConfig, ConfigEnv } from 'vite'
+import { loadEnv } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import { resolve } from 'path'
+
+const CWD = process.cwd()
+const root: string = CWD
+
+// 环境变量
+const BASE_ENV_CONFIG = loadEnv('', CWD)
+const DEV_ENV_CONFIG = loadEnv('development', CWD)
+const PROD_ENV_CONFIG = loadEnv('production', CWD)
+
+export default ({ command, mode }: ConfigEnv): UserConfig => {
+  // 取到-配置的环境变量
+  const { VITE_BASE_URL, VITE_DROP_CONSOLE, VITE_LEGACY} = loadEnv(mode, CWD)
+
+  const isBuild = command === 'build';
+
+  return {
+    base: ".",
+    ...
+  }
+}
+```
+
+6.关于vite.config的配置信息通过 `script指令` 传入会合理些, 如: `--mode developent/production`、 `--host`、 `--port`
 
 
 

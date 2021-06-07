@@ -1,6 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <p class="title">title</p>
 </template>
 
 <script lang="ts">
@@ -28,5 +29,12 @@ export default defineComponent({
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.title {
+  width: 300px;
+  height: 36px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 </style>

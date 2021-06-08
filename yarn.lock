@@ -20,6 +20,62 @@
     "@babel/helper-validator-identifier" "^7.14.0"
     to-fast-properties "^2.0.0"
 
+"@intlify/core-base@9.1.6":
+  version "9.1.6"
+  resolved "https://registry.nlark.com/@intlify/core-base/download/@intlify/core-base-9.1.6.tgz#887fbeafe37d955bac50318f30ac589839f0d9fb"
+  integrity sha1-iH++r+N9lVusUDGPMKxYmDnw2fs=
+  dependencies:
+    "@intlify/devtools-if" "9.1.6"
+    "@intlify/message-compiler" "9.1.6"
+    "@intlify/message-resolver" "9.1.6"
+    "@intlify/runtime" "9.1.6"
+    "@intlify/shared" "9.1.6"
+    "@intlify/vue-devtools" "9.1.6"
+
+"@intlify/devtools-if@9.1.6":
+  version "9.1.6"
+  resolved "https://registry.nlark.com/@intlify/devtools-if/download/@intlify/devtools-if-9.1.6.tgz?cache=0&sync_timestamp=1622646869594&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40intlify%2Fdevtools-if%2Fdownload%2F%40intlify%2Fdevtools-if-9.1.6.tgz#739b195e430e24fbf8f864ec8a51e243e3347385"
+  integrity sha1-c5sZXkMOJPv4+GTsilHiQ+M0c4U=
+  dependencies:
+    "@intlify/shared" "9.1.6"
+
+"@intlify/message-compiler@9.1.6":
+  version "9.1.6"
+  resolved "https://registry.nlark.com/@intlify/message-compiler/download/@intlify/message-compiler-9.1.6.tgz#e3e99165c1e6ecc496211017799ae59e15b05a18"
+  integrity sha1-4+mRZcHm7MSWIRAXeZrlnhWwWhg=
+  dependencies:
+    "@intlify/message-resolver" "9.1.6"
+    "@intlify/shared" "9.1.6"
+    source-map "0.6.1"
+
+"@intlify/message-resolver@9.1.6":
+  version "9.1.6"
+  resolved "https://registry.nlark.com/@intlify/message-resolver/download/@intlify/message-resolver-9.1.6.tgz?cache=0&sync_timestamp=1622646451520&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40intlify%2Fmessage-resolver%2Fdownload%2F%40intlify%2Fmessage-resolver-9.1.6.tgz#d7493c9f326d5feb0cd8538a6735b648a91d8f2f"
+  integrity sha1-10k8nzJtX+sM2FOKZzW2SKkdjy8=
+
+"@intlify/runtime@9.1.6":
+  version "9.1.6"
+  resolved "https://registry.nlark.com/@intlify/runtime/download/@intlify/runtime-9.1.6.tgz#bf1548d9034c80eef92b06b240cb347effb41f71"
+  integrity sha1-vxVI2QNMgO75KwayQMs0fv+0H3E=
+  dependencies:
+    "@intlify/message-compiler" "9.1.6"
+    "@intlify/message-resolver" "9.1.6"
+    "@intlify/shared" "9.1.6"
+
+"@intlify/shared@9.1.6":
+  version "9.1.6"
+  resolved "https://registry.nlark.com/@intlify/shared/download/@intlify/shared-9.1.6.tgz?cache=0&sync_timestamp=1622646451120&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40intlify%2Fshared%2Fdownload%2F%40intlify%2Fshared-9.1.6.tgz#d03c9301898d6ddffe2a54c03e7664174fbcdfd9"
+  integrity sha1-0DyTAYmNbd/+KlTAPnZkF0+839k=
+
+"@intlify/vue-devtools@9.1.6":
+  version "9.1.6"
+  resolved "https://registry.nlark.com/@intlify/vue-devtools/download/@intlify/vue-devtools-9.1.6.tgz#88faadf203951a2a10107440fa99b58f4637d40d"
+  integrity sha1-iPqt8gOVGioQEHRA+pm1j0Y31A0=
+  dependencies:
+    "@intlify/message-resolver" "9.1.6"
+    "@intlify/runtime" "9.1.6"
+    "@intlify/shared" "9.1.6"
+
 "@popperjs/core@^2.9.2":
   version "2.9.2"
   resolved "https://registry.npm.taobao.org/@popperjs/core/download/@popperjs/core-2.9.2.tgz?cache=0&sync_timestamp=1617290098226&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40popperjs%2Fcore%2Fdownload%2F%40popperjs%2Fcore-2.9.2.tgz#adea7b6953cbb34651766b0548468e743c6a2353"
@@ -113,6 +169,11 @@
   dependencies:
     "@vue/compiler-dom" "3.0.11"
     "@vue/shared" "3.0.11"
+
+"@vue/devtools-api@^6.0.0-beta.7":
+  version "6.0.0-beta.12"
+  resolved "https://registry.nlark.com/@vue/devtools-api/download/@vue/devtools-api-6.0.0-beta.12.tgz?cache=0&sync_timestamp=1622269032509&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40vue%2Fdevtools-api%2Fdownload%2F%40vue%2Fdevtools-api-6.0.0-beta.12.tgz#693ffc77bfb66b080e5c9576abb5786c85470a32"
+  integrity sha1-aT/8d7+2awgOXJV2q7V4bIVHCjI=
 
 "@vue/reactivity@3.0.11":
   version "3.0.11"
@@ -759,7 +820,7 @@ source-map-js@^0.6.2:
   resolved "https://registry.npm.taobao.org/source-map-js/download/source-map-js-0.6.2.tgz#0bb5de631b41cfbda6cfba8bd05a80efdfd2385e"
   integrity sha1-C7XeYxtBz72mz7qL0FqA79/SOF4=
 
-source-map@^0.6.1:
+source-map@0.6.1, source-map@^0.6.1:
   version "0.6.1"
   resolved "https://registry.nlark.com/source-map/download/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha1-dHIq8y6WFOnCh6jQu95IteLxomM=
@@ -868,6 +929,16 @@ vite@^2.3.5:
     rollup "^2.38.5"
   optionalDependencies:
     fsevents "~2.3.1"
+
+vue-i18n@^9.1.6:
+  version "9.1.6"
+  resolved "https://registry.nlark.com/vue-i18n/download/vue-i18n-9.1.6.tgz#4cf992e2aec5458bc19369973c96ea7d0f560321"
+  integrity sha1-TPmS4q7FRYvBk2mXPJbqfQ9WAyE=
+  dependencies:
+    "@intlify/core-base" "9.1.6"
+    "@intlify/shared" "9.1.6"
+    "@intlify/vue-devtools" "9.1.6"
+    "@vue/devtools-api" "^6.0.0-beta.7"
 
 vue-tsc@^0.0.24:
   version "0.0.24"

@@ -1,4 +1,4 @@
-import { defineConfig, loadEnv } from 'vite'
+import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from "path";
 import styleImport from "vite-plugin-style-import";
@@ -13,6 +13,7 @@ export default defineConfig({
       utils: path.resolve(__dirname, './src/utils'),
       assets: path.resolve(__dirname, "./src/assets"),
       hooks: path.resolve(__dirname, "./src/hooks"),
+      plugins: path.resolve(__dirname, "./src/plugins"),
       store: path.resolve(__dirname, "./src/store"),
       router: path.resolve(__dirname, "./src/router"),
       api: path.resolve(__dirname, "./src/api"),
@@ -23,10 +24,12 @@ export default defineConfig({
       {
         libraryName: 'vant',
         esModule: true,
-        resolveStyle: (name) => `vant/es/${name}/style/less`,
+        resolveStyle: (name) => {
+          return `vant/es/${name}/style/index`;
+        },
       },
     ],
-  }),],
+  }),,],
   build: {
     //浏览器兼容性
     target: 'es2015',

@@ -170,6 +170,11 @@
     "@vue/compiler-dom" "3.0.11"
     "@vue/shared" "3.0.11"
 
+"@vue/devtools-api@^6.0.0-beta.10":
+  version "6.0.0-beta.13"
+  resolved "https://registry.nlark.com/@vue/devtools-api/download/@vue/devtools-api-6.0.0-beta.13.tgz?cache=0&sync_timestamp=1623060345677&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40vue%2Fdevtools-api%2Fdownload%2F%40vue%2Fdevtools-api-6.0.0-beta.13.tgz#ff31e552ae3e99b5f2c0af0ca81f0889dbfb2155"
+  integrity sha1-/zHlUq4+mbXywK8MqB8Iidv7IVU=
+
 "@vue/devtools-api@^6.0.0-beta.7":
   version "6.0.0-beta.12"
   resolved "https://registry.nlark.com/@vue/devtools-api/download/@vue/devtools-api-6.0.0-beta.12.tgz?cache=0&sync_timestamp=1622269032509&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40vue%2Fdevtools-api%2Fdownload%2F%40vue%2Fdevtools-api-6.0.0-beta.12.tgz#693ffc77bfb66b080e5c9576abb5786c85470a32"
@@ -813,7 +818,7 @@ postcss-modules@^4.0.0:
 
 postcss-pxtorem@^6.0.0:
   version "6.0.0"
-  resolved "https://registry.nlark.com/postcss-pxtorem/download/postcss-pxtorem-6.0.0.tgz#f228a4d05d8a73f0642eabae950e2b19836366d7"
+  resolved "https://registry.npm.taobao.org/postcss-pxtorem/download/postcss-pxtorem-6.0.0.tgz?cache=0&sync_timestamp=1615001364186&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpostcss-pxtorem%2Fdownload%2Fpostcss-pxtorem-6.0.0.tgz#f228a4d05d8a73f0642eabae950e2b19836366d7"
   integrity sha1-8iik0F2Kc/BkLquulQ4rGYNjZtc=
 
 postcss-selector-parser@^6.0.2, postcss-selector-parser@^6.0.4:
@@ -1050,6 +1055,13 @@ vue-i18n@^9.1.6:
     "@intlify/shared" "9.1.6"
     "@intlify/vue-devtools" "9.1.6"
     "@vue/devtools-api" "^6.0.0-beta.7"
+
+vue-router@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.nlark.com/vue-router/download/vue-router-4.0.8.tgz?cache=0&sync_timestamp=1620899536020&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvue-router%2Fdownload%2Fvue-router-4.0.8.tgz#55d4290a3122444edbc91a3cd2492bb1d0cef494"
+  integrity sha1-VdQpCjEiRE7byRo80kkrsdDO9JQ=
+  dependencies:
+    "@vue/devtools-api" "^6.0.0-beta.10"
 
 vue-tsc@^0.0.24:
   version "0.0.24"

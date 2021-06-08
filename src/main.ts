@@ -3,6 +3,7 @@ import "lib-flexible";
 import App from "./App.vue";
 import vueI18n from "@/plugins/i18n";
 import vant from "@/plugins/vant";
+import "@/assets/style/import.scss";
 
 const app = createApp(App);
 
